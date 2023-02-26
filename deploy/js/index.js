@@ -140,7 +140,7 @@ calPeriAreaForm.addEventListener("submit", function (e) {
         +calPeriAreaWidth.value
     );
     const resultArea = calArea(+calPeriAreaLength.value, +calPeriAreaWidth.value);
-    calPeriAreaResult.textContent = `Kết quả => Diện tích: ${resultArea} / Chu vi: ${resultPerimete}`;
+    calPeriAreaResult.innerHTML = `Kết quả: <br>- Diện tích: ${resultArea} <br>- Chu vi: ${resultPerimete}`;
 });
 
 // ===================================================================
